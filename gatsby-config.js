@@ -3,5 +3,14 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "my-team-page",
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['PT Serif', 'Montserrat', "Poppins"]
+        }
+      }
+    }
+  ],
 };
